@@ -42,20 +42,20 @@ def check_image_for_ai_metadata(image_path):
 
  #  Condition whether or not file has AI-generated metadata and if so print indicators into a human-readable string.
         if found_indicators:
-            print(f"\n✅ AI metadata indicators FOUND in: {image_path}\n")
+            print(f"\n AI metadata indicators FOUND in: {image_path}\n")
             print("Indicators Found in Metadata:")
             for i, indicator in enumerate(found_indicators, start=1):
                 printable = indicator.decode("utf-8", errors="replace")
                 print(f" {i:2}. {printable}")
         else:
-            print(f"\n❌ No AI metadata indicators found in: {image_path}")
+            print(f"\n No AI metadata indicators found in: {image_path}")
 
     except PermissionError:
-        print(f"🚫 Permission denied: {image_path}")
+        print(f" Permission denied: {image_path}")
     except IOError as e:
-        print(f"⚠️ IO Error: {e}")
+        print(f" IO Error: {e}")
     except Exception as e:
-        print(f"⚠️ Unexpected error: {e}")
+        print(f" Unexpected error: {e}")
 
 def main():
     parser = argparse.ArgumentParser(
