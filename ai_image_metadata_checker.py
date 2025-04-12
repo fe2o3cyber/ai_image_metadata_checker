@@ -1,7 +1,7 @@
 """
 ai_metadata_checker.py
 
-A lightweight script to scan image files for common AI-generated metadata identifiers (e.g. C2PA, Adobe Content Credentials).
+A lightweight script to scan image files for common AI-generated metadata identifiers (ex: C2PA, Adobe Content Credentials).
 
 Author: Charles Riley Rust
 """
