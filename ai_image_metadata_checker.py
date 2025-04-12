@@ -32,7 +32,7 @@ def check_image_for_ai_metadata(image_path):
     
     # Check if the file exists at the given path
     if not os.path.isfile(image_path):
-        print(f"❌ File not found: {image_path}")
+        print(f" File not found: {image_path}")
         return
     try:
         with open(image_path, "rb") as img_file:
