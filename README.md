@@ -20,7 +20,7 @@ The script opens an image file in binary mode and checks for specific AI-related
 
 ## Instructions for Execution
 
-Clone the repository and run the script with Python 3:
+Download directly from this repository or clone the repository and run the script with Python 3:
 
 git clone https://github.com/fe2o3cyber/ai-image-metadata-checker.git
 
