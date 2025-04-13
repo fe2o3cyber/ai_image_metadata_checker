@@ -26,4 +26,4 @@ git clone https://github.com/fe2o3cyber/ai_image_metadata_checker.git
 
 cd ai-image-metadata-checker
 
-python3 ai_image_metadata_checker.py path/to/image.jpg**
+python ai_image_metadata_checker.py path/to/image.jpg
