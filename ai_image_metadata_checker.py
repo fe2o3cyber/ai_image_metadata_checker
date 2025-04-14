@@ -103,9 +103,5 @@ def main():
 
     check_image_for_ai_metadata(args.image_path)
 
-    if not args.image_path:
-        print("Please provide a path to an image file.")
-        return
-
 if __name__ == "__main__":
     main()
