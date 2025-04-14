@@ -17,7 +17,7 @@ AI_INDICATORS = [
     b'c2pa.assertions', b'c2pa.actions',
     b'c2pa.thumbnail', b'c2pa.signature', b'c2pa.manifest',
     b'c2pa.manifest_store', b'c2pa.ingredient', b'c2pa.parent',
-    b'c2pa.provenance', b'c2pa.claim', b'c2pa.hash', b'c2pa.authority'
+    b'c2pa.provenance', b'c2pa.claim', b'c2pa.hash', b'c2pa.authority',
     b'jumdc2pn', b'jumdrefs', b'jumdver', b'jumdmeta',
     
     
@@ -102,6 +102,10 @@ def main():
     args = parser.parse_args()
 
     check_image_for_ai_metadata(args.image_path)
+
+    if not args.image_path:
+        print("Please provide a path to an image file.")
+        return
 
 if __name__ == "__main__":
     main()
